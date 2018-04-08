@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--可以让页面不要缩放的命令
+    页面宽度等于设备宽度，用户不能缩放，初始缩放比例，最大缩放比例，最小的缩放比例-->
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>我的画板</title>
+</head>
+<body>
+    <canvas id="canvas" width="300" height="300"></canvas>
+    <div id="actions" class="actions">
+        <svg id="pen" class="active icon" aria-hidden="true">
+            <use xlink:href="#icon-pencil"></use>
+        </svg>
+        <svg id="eraser" class="icon" aria-hidden="true">
+            <use xlink:href="#icon-eraser"></use>
+        </svg>
+        <svg id="clear" class="icon" aria-hidden="true">
+            <use xlink:href="#icon-custom-clear"></use>
+        </svg>
+        <svg id="download" class="icon" aria-hidden="true">
+            <use xlink:href="#icon-download"></use>
+        </svg>
+
+        <!-- <button id="eraser">橡皮擦</button>
+        <button id="brush">画笔</button> -->
+    </div>
+
+    <ol class="colors">
+        <li id="red" class="red active"></li>
+        <li id="green" class="green"></li>
+        <li id="blue" class="blue"></li>
+    </ol>
+    <ol class="sizes">
+        <li id="thin" class="thin"></li>
+        <li id="thick" class="thick"></li>
+    </ol>
+
+    <script src="js/main.js"></script>
+    <script src="//at.alicdn.com/t/font_570226_tbotke43ob273nmi.js"></script>
+    
+</body>
+</html>
